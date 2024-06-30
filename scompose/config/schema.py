@@ -115,6 +115,10 @@ instance = {
         "run": {"oneOf": [instance_run, {"type": "array"}]},
         "post": instance_post,
         "deploy": instance_deploy,
+        "restart": {
+            "type": "string",
+            "enum": ["always"]
+        },
     },
 }
 
